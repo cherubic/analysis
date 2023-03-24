@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import os
 
 
 # data utils class
@@ -23,3 +24,10 @@ class DataUtils:
         with open(config_path, 'r') as f:
             config = json.load(f)
         return config
+
+    # static method: get all file path in directory
+    @staticmethod
+    def get_file_path(directory_path):
+        for root, dirs, files in os.walk(directory_path):
+            for file in files:
+                yield os.path.join(root, file)

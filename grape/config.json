@@ -1,5 +1,6 @@
 {
   "incidents_file_path": "400536_incident.csv",
   "all_vds_file_path": "400536.csv",
-  "origin_file_path": "origin_data.txt"
+  "origin_directory_path": "origin_data",
+  "origin_out_dir": "origin_data_out"
 }
